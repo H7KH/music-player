@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music player</title>
+    <link rel="icon" href="images/music-fav.svg" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Music Player</h1>
+
+    <div class="music-container" id="music-container">
+      <div class="music-info">
+        <h4 id="title"></h4>
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
+
+      <audio id="audio"></audio>
+
+      <div class="img-container">
+        <img alt="music-cover" id="cover" />
+      </div>
+
+      <div class="navigation">
+        <button class="action-btn" id="prev">
+          <i class="fa-solid fa-backward" style="color: #212529"></i>
+        </button>
+
+        <button class="action-btn action-btn-big" id="play">
+          <i class="fa-solid fa-play" style="color: #212529"></i>
+        </button>
+
+        <button class="action-btn" id="next">
+          <i class="fa-solid fa-forward" style="color: #212529"></i>
+        </button>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/96a562f0a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
